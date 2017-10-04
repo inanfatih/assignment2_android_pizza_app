@@ -34,18 +34,43 @@
         android:layout_marginStart="17dp"
         android:layout_marginTop="10dp"
         android:text="Pizza Type:"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pizzaTypeData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pizzaTypeLabel"
+        android:layout_alignBottom="@+id/pizzaTypeLabel"
+        android:layout_toEndOf="@+id/paymentMethodLabel"
+        android:layout_toRightOf="@+id/paymentMethodLabel"
+        android:text="Pizza Type:"
         android:textSize="18sp" />
 
     <TextView
         android:id="@+id/expiryDateLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cardTypeLabel"
+        android:layout_alignStart="@+id/cardTypeLabel"
+        android:layout_below="@+id/cardTypeLabel"
         android:layout_marginTop="10dp"
         android:text="Expiry Date:"
+        android:textColor="@android:color/black"
         android:textSize="18sp"
-        android:layout_below="@+id/cardTypeLabel"
-        android:layout_alignLeft="@+id/cardTypeLabel"
-        android:layout_alignStart="@+id/cardTypeLabel" />
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/expiryDateData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expiry Date:"
+        android:textSize="18sp"
+        android:layout_above="@+id/orderMoreButton"
+        android:layout_toRightOf="@+id/paymentMethodLabel"
+        android:layout_toEndOf="@+id/paymentMethodLabel" />
 
     <TextView
         android:id="@+id/cardTypeLabel"
@@ -56,7 +81,20 @@
         android:layout_below="@+id/cardNumberLabel"
         android:layout_marginTop="10dp"
         android:text="Card Type:"
-        android:textSize="18sp" />
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cardTypeData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Card Type:"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/cardTypeLabel"
+        android:layout_alignBottom="@+id/cardTypeLabel"
+        android:layout_alignLeft="@+id/expiryDateData"
+        android:layout_alignStart="@+id/expiryDateData" />
 
     <TextView
         android:id="@+id/addressLabel"
@@ -67,7 +105,20 @@
         android:layout_below="@+id/nameLabel"
         android:layout_marginTop="10dp"
         android:text="Address:"
-        android:textSize="18sp" />
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/addressData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address:"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/addressLabel"
+        android:layout_alignBottom="@+id/addressLabel"
+        android:layout_toRightOf="@+id/paymentMethodLabel"
+        android:layout_toEndOf="@+id/paymentMethodLabel" />
 
     <TextView
         android:id="@+id/nameLabel"
@@ -78,23 +129,36 @@
         android:layout_below="@+id/customerInfoLabel"
         android:layout_marginTop="10dp"
         android:text="Name:"
-        android:textSize="18sp" />
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nameData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/nameLabel"
+        android:layout_alignBottom="@+id/nameLabel"
+        android:layout_alignLeft="@+id/addressData"
+        android:layout_alignStart="@+id/addressData" />
 
     <TextView
         android:id="@+id/customerInfoLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="31dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toppingsLabel"
+        android:layout_marginTop="13dp"
         android:text="Customer Information"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_below="@+id/toppingsLabel"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/toppingsLabel"
@@ -105,7 +169,20 @@
         android:layout_below="@+id/pizzaSizeLabel"
         android:layout_marginTop="10dp"
         android:text="Toppings:"
-        android:textSize="18sp" />
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/toppingsData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toppings:"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/toppingsLabel"
+        android:layout_alignBottom="@+id/toppingsLabel"
+        android:layout_alignLeft="@+id/nameData"
+        android:layout_alignStart="@+id/nameData" />
 
     <TextView
         android:id="@+id/cardNumberLabel"
@@ -115,6 +192,19 @@
         android:layout_alignStart="@+id/paymentMethodLabel"
         android:layout_below="@+id/paymentMethodLabel"
         android:layout_marginTop="10dp"
+        android:text="Card Number:"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cardNumberData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cardNumberLabel"
+        android:layout_alignBottom="@+id/cardNumberLabel"
+        android:layout_toEndOf="@+id/paymentMethodLabel"
+        android:layout_toRightOf="@+id/paymentMethodLabel"
         android:text="Card Number:"
         android:textSize="18sp" />
 
@@ -127,6 +217,19 @@
         android:layout_below="@+id/telephoneLabel"
         android:layout_marginTop="10dp"
         android:text="Payment Method:"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/paymentMethodData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/paymentMethodLabel"
+        android:layout_alignBottom="@+id/paymentMethodLabel"
+        android:layout_toEndOf="@+id/paymentMethodLabel"
+        android:layout_toRightOf="@+id/paymentMethodLabel"
+        android:text="Payment Method:"
         android:textSize="18sp" />
 
     <TextView
@@ -138,6 +241,19 @@
         android:layout_below="@+id/addressLabel"
         android:layout_marginTop="10dp"
         android:text="Telephone:"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/telephoneData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/telephoneLabel"
+        android:layout_alignBottom="@+id/telephoneLabel"
+        android:layout_alignEnd="@+id/cardTypeData"
+        android:layout_alignRight="@+id/cardTypeData"
+        android:text="Telephone:"
         android:textSize="18sp" />
 
     <TextView
@@ -148,6 +264,19 @@
         android:layout_alignStart="@+id/pizzaTypeLabel"
         android:layout_below="@+id/pizzaTypeLabel"
         android:layout_marginTop="10dp"
+        android:text="Pizza Size:"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pizzaSizeData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pizzaSizeLabel"
+        android:layout_alignBottom="@+id/pizzaSizeLabel"
+        android:layout_alignLeft="@+id/toppingsData"
+        android:layout_alignStart="@+id/toppingsData"
         android:text="Pizza Size:"
         android:textSize="18sp" />
 

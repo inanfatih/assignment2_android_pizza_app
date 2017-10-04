@@ -36,12 +36,12 @@ Customer Information
 
         Intent isim = getIntent();
 
-        TextView text21 = (TextView) findViewById(R.id.FullName22);
+        TextView text01 = (TextView) findViewById(R.id.FullName22);
         String vFullName = isim.getExtras().getString("FullName2");
         text21.setText(vFullName);
- */
 
 
+*/
 
     }
 }

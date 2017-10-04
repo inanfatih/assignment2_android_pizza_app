@@ -8,7 +8,7 @@
     tools:context="com.example.fatih.orderpizza.CustomerInformation">
 
     <TextView
-        android:id="@+id/name"
+        android:id="@+id/nameData"
         android:layout_width="135dp"
         android:layout_height="wrap_content"
         android:text="Name:"
@@ -26,7 +26,7 @@
         android:text="Address:"
         android:textSize="20sp"
         android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/nameData"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginStart="8dp" />
@@ -76,7 +76,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/name"
+        app:layout_constraintLeft_toRightOf="@+id/nameData"
         android:layout_marginLeft="23dp"
         android:layout_marginStart="23dp" />
 
