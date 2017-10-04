@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#E3F2FD"
+    android:layout_height="match_parent"
+    tools:context="com.example.fatih.orderpizza.ExtraTopping">
+
+    <CheckBox
+        android:id="@+id/spanishonions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spanish Onions"
+        android:textSize="24sp"
+        android:layout_marginLeft="38dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blackolives"
+        android:layout_marginStart="38dp" />
+
+    <CheckBox
+        android:id="@+id/blackolives"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Black Olives"
+        android:textSize="24sp"
+        android:layout_marginLeft="38dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:ignore="HardcodedText"
+        app:layout_constraintTop_toBottomOf="@+id/spinach"
+        android:layout_marginStart="38dp" />
+
+    <CheckBox
+        android:id="@+id/spinach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spinach"
+        android:textSize="24sp"
+        android:layout_marginLeft="38dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/smokedham"
+        android:layout_marginStart="38dp" />
+
+    <CheckBox
+        android:id="@+id/smokedham"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Smoked Ham"
+        android:textSize="24sp"
+        android:layout_marginLeft="38dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/greenpepper"
+        android:layout_marginStart="38dp" />
+
+    <CheckBox
+        android:id="@+id/greenpepper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Green Pepper"
+        android:textSize="24sp"
+        android:layout_marginLeft="38dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cheese"
+        android:layout_marginStart="38dp" />
+
+    <CheckBox
+        android:id="@+id/cheese"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:text="Cheese"
+        android:textSize="24sp"
+        android:layout_marginLeft="38dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:ignore="HardcodedText"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="38dp" />
+
+    <Button
+        android:id="@+id/toppingNext"
+        android:layout_width="368dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="165dp"
+        android:text="NEXT: Enter Your Info"
+        android:onClick="toppingButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spanishonions" />
+</android.support.constraint.ConstraintLayout>
