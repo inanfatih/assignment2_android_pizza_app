@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,6 +8,174 @@
     tools:context="com.example.fatih.orderpizza.Confirmation">
 
 
+    <TextView
+        android:id="@+id/orderplaced"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/thankyou"
+        android:text="Your Order is Placed"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
+    <TextView
+        android:id="@+id/pizzaTypeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/orderplaced"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="10dp"
+        android:text="Pizza Type:"
+        android:textSize="18sp" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/expiryDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Expiry Date:"
+        android:textSize="18sp"
+        android:layout_below="@+id/cardTypeLabel"
+        android:layout_alignLeft="@+id/cardTypeLabel"
+        android:layout_alignStart="@+id/cardTypeLabel" />
+
+    <TextView
+        android:id="@+id/cardTypeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cardNumberLabel"
+        android:layout_alignStart="@+id/cardNumberLabel"
+        android:layout_below="@+id/cardNumberLabel"
+        android:layout_marginTop="10dp"
+        android:text="Card Type:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/addressLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/toppingsLabel"
+        android:layout_alignStart="@+id/toppingsLabel"
+        android:layout_below="@+id/nameLabel"
+        android:layout_marginTop="10dp"
+        android:text="Address:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/addressLabel"
+        android:layout_alignStart="@+id/addressLabel"
+        android:layout_below="@+id/customerInfoLabel"
+        android:layout_marginTop="10dp"
+        android:text="Name:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/customerInfoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:text="Customer Information"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/toppingsLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/toppingsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pizzaSizeLabel"
+        android:layout_alignStart="@+id/pizzaSizeLabel"
+        android:layout_below="@+id/pizzaSizeLabel"
+        android:layout_marginTop="10dp"
+        android:text="Toppings:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/cardNumberLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/paymentMethodLabel"
+        android:layout_alignStart="@+id/paymentMethodLabel"
+        android:layout_below="@+id/paymentMethodLabel"
+        android:layout_marginTop="10dp"
+        android:text="Card Number:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/paymentMethodLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/telephoneLabel"
+        android:layout_alignStart="@+id/telephoneLabel"
+        android:layout_below="@+id/telephoneLabel"
+        android:layout_marginTop="10dp"
+        android:text="Payment Method:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/telephoneLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/addressLabel"
+        android:layout_alignStart="@+id/addressLabel"
+        android:layout_below="@+id/addressLabel"
+        android:layout_marginTop="10dp"
+        android:text="Telephone:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/pizzaSizeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pizzaTypeLabel"
+        android:layout_alignStart="@+id/pizzaTypeLabel"
+        android:layout_below="@+id/pizzaTypeLabel"
+        android:layout_marginTop="10dp"
+        android:text="Pizza Size:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/thankyou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:text="THANK YOU!"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/orderMoreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/expiryDateLabel"
+        android:layout_marginTop="15dp"
+        android:text="Order More" />
+</RelativeLayout>
