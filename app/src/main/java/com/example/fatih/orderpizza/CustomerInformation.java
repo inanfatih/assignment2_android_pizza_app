@@ -8,11 +8,6 @@ import android.widget.EditText;
 
 public class CustomerInformation extends AppCompatActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_customer_information);
-    }
 
     public EditText pName;
     public EditText pAddress;
@@ -22,6 +17,13 @@ public class CustomerInformation extends AppCompatActivity {
     public EditText pCardNumber;
     public EditText pCardType;
     public EditText pExpiry;
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_customer_information);
+    }
 
     public void custInfo(View v)
     {

@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.CheckBox;
 
 public class ExtraTopping extends AppCompatActivity {
-    public String toppings = "";
+    public String extraToppings = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,37 +27,35 @@ public class ExtraTopping extends AppCompatActivity {
 
             if (cheeseBox.isChecked())
             {
-            toppings = toppings + "Cheese, ";
+                extraToppings = extraToppings + "Cheese, ";
             }
             if (greenPepperBox.isChecked())
             {
-                toppings = toppings + "Green Pepper, ";
+                extraToppings = extraToppings + "Green Pepper, ";
             }
 
             if (smokedHamBox.isChecked())
             {
-                toppings = toppings + "Smoked Ham, ";
+                extraToppings = extraToppings + "Smoked Ham, ";
             }
 
             if (spinachBox.isChecked())
             {
-                toppings = toppings + "Spinach, ";
+                extraToppings = extraToppings + "Spinach, ";
             }
 
             if (blackOlivesBox.isChecked())
             {
-                toppings = toppings + "Black Olives, ";
+                extraToppings = extraToppings + "Black Olives, ";
             }
 
             if (spanishOnionsBox.isChecked())
             {
-                toppings = toppings + "Spanish Onions";
+                extraToppings = extraToppings + "Spanish Onions";
             }
 
-            i3.putExtra("toppings", toppings);
+            i3.putExtra("toppings", extraToppings);
             startActivity(i3);
-
-
 
         }
 

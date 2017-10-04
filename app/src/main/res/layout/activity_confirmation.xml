@@ -63,14 +63,39 @@
         android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/postalCodeData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/expiryDateLabel"
+        android:layout_alignStart="@+id/expiryDateLabel"
+        android:layout_below="@+id/expiryDateLabel"
+        android:text="Postal Code"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
         android:id="@+id/expiryDateData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:text="Postal Code"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/expiryDateLabel"
+        android:layout_alignBottom="@+id/expiryDateLabel"
+        android:layout_alignLeft="@+id/cardNumberData"
+        android:layout_alignStart="@+id/cardNumberData"
         android:text="Expiry Date:"
-        android:textSize="18sp"
-        android:layout_above="@+id/orderMoreButton"
-        android:layout_toRightOf="@+id/paymentMethodLabel"
-        android:layout_toEndOf="@+id/paymentMethodLabel" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/cardTypeLabel"
@@ -300,11 +325,10 @@
         android:id="@+id/orderMoreButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
+        android:text="Order More"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/expiryDateLabel"
-        android:layout_marginTop="15dp"
-        android:text="Order More" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>
