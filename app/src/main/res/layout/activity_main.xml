@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#E3F2FD"
+    android:background="@color/backgrounds"
     android:layout_height="match_parent"
     tools:context="com.example.fatih.orderpizza.MainActivity">
 

@@ -55,6 +55,14 @@ public class ExtraTopping extends AppCompatActivity {
             }
 
             i3.putExtra("toppings", extraToppings);
+
+            Intent isim = getIntent();
+
+            String sPizzaType = isim.getExtras().getString("pizzatype");
+            String sPizzaSize = isim.getExtras().getString("pizzasize");
+            i3.putExtra("pizzatype", sPizzaType);
+            i3.putExtra("pizzasize", sPizzaSize);
+
             startActivity(i3);
 
         }

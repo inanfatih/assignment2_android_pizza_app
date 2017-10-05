@@ -3,12 +3,7 @@ package com.example.fatih.orderpizza;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.MenuItem;
-import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import static com.example.fatih.orderpizza.R.id.meatsupreme;
 
 public class Confirmation extends AppCompatActivity {
 
@@ -73,6 +68,10 @@ Customer Information
   TextView text10 = (TextView) findViewById(R.id.expiryDateData);
   String sExpiryDate = isim.getExtras().getString("expirydate");
   text10.setText(sExpiryDate);
+
+  TextView text11 = (TextView) findViewById(R.id.addressData);
+  String sAddress = isim.getExtras().getString("address");
+  text11.setText(sAddress);
 
 
  }

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#E3F2FD"
+    android:background="@color/backgrounds"
     android:layout_height="match_parent"
     tools:context="com.example.fatih.orderpizza.CustomerInformation">
 
@@ -117,10 +117,9 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintTop_toBottomOf="@+id/paymentMethodID"
-        app:layout_constraintLeft_toRightOf="@+id/cardNumber"
-        android:layout_marginLeft="33dp"
-        android:layout_marginStart="33dp" />
+        android:layout_marginStart="23dp"
+        tools:layout_editor_absoluteY="246dp"
+        tools:layout_editor_absoluteX="166dp" />
 
     <EditText
         android:id="@+id/addressID"
@@ -196,11 +195,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="57dp"
-        android:layout_marginStart="57dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="date"
         app:layout_constraintLeft_toRightOf="@+id/expiryDate"
-        app:layout_constraintTop_toBottomOf="@+id/cardTypeID" />
+        app:layout_constraintTop_toBottomOf="@+id/cardTypeID"
+        android:layout_marginStart="57dp" />
 
 
 </android.support.constraint.ConstraintLayout>

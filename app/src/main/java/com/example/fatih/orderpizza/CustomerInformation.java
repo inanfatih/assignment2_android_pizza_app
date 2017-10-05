@@ -53,6 +53,15 @@ public class CustomerInformation extends AppCompatActivity {
         pExpiry = (EditText) findViewById(R.id.expiryDateID);
         i4.putExtra("expirydate",pExpiry.getText().toString());
 
+        Intent isim = getIntent();
+
+        String sPizzaType = isim.getExtras().getString("pizzatype");
+        String sPizzaSize = isim.getExtras().getString("pizzasize");
+        String sToppings = isim.getExtras().getString("toppings");
+        i4.putExtra("pizzatype", sPizzaType);
+        i4.putExtra("pizzasize", sPizzaSize);
+        i4.putExtra("toppings", sToppings);
+
         startActivity(i4);
     }
 

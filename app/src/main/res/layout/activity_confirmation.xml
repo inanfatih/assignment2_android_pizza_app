@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E3F2FD"
+    android:background="@color/backgrounds"
     tools:context="com.example.fatih.orderpizza.Confirmation">
 
 
@@ -63,7 +63,7 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/postalCodeData"
+        android:id="@+id/postalCodeLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/expiryDateLabel"
@@ -76,18 +76,18 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/expiryDateData"
+        android:id="@+id/postalCodeData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView4"
-        android:layout_alignStart="@+id/textView4"
-        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/expiryDateData"
+        android:layout_alignStart="@+id/expiryDateData"
+        android:layout_below="@+id/expiryDateData"
         android:text="Postal Code"
         android:layout_marginTop="10dp"
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/expiryDateData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/expiryDateLabel"
@@ -116,10 +116,9 @@
         android:layout_height="wrap_content"
         android:text="Card Type:"
         android:textSize="18sp"
-        android:layout_alignBaseline="@+id/cardTypeLabel"
-        android:layout_alignBottom="@+id/cardTypeLabel"
-        android:layout_alignLeft="@+id/expiryDateData"
-        android:layout_alignStart="@+id/expiryDateData" />
+        android:layout_above="@+id/expiryDateLabel"
+        android:layout_alignRight="@+id/telephoneData"
+        android:layout_alignEnd="@+id/telephoneData" />
 
     <TextView
         android:id="@+id/addressLabel"
@@ -274,12 +273,11 @@
         android:id="@+id/telephoneData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/telephoneLabel"
-        android:layout_alignBottom="@+id/telephoneLabel"
-        android:layout_alignEnd="@+id/cardTypeData"
-        android:layout_alignRight="@+id/cardTypeData"
         android:text="Telephone:"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:layout_above="@+id/paymentMethodLabel"
+        android:layout_alignRight="@+id/pizzaSizeData"
+        android:layout_alignEnd="@+id/pizzaSizeData" />
 
     <TextView
         android:id="@+id/pizzaSizeLabel"
@@ -321,14 +319,4 @@
         android:textSize="24sp"
         android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/orderMoreButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Order More"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
 </RelativeLayout>
